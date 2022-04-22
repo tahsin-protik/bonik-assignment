@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const { count_query_by_date_status } = require('./controllers/orderController');
 const app = express()
-const port = 5000
+const port = process.env.APP_PORT
 const sequelize = require('./models/index'); 
 
 sequelize.authenticate().then(console.log('Database Connected'));
