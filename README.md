@@ -17,6 +17,12 @@ $ npm install
 
 - Configure the environment variables.
 
+- Migrate database tables
+``` 
+$ node migration.js
+
+```
+
 
 - Run the project
 
